@@ -1,0 +1,6 @@
+{
+  "env": {
+    "MONGO_ATLAS_PW": "Perfection081*",
+    "PORT": "3000"
+  }
+}
