@@ -27,7 +27,12 @@ const TravelItem = require('../models/travelitem')
 
 router.post(
     '/',
-    upload.single('travelItemImage'),
+    () => {
+        // Check for user directory and set path there
+
+        // Upload image to directory
+        upload.single('travelItemImage')
+    },
     (req, res, next) => {
         const travelItem = new TravelItem({
             _id: new mongoose.Types.ObjectId(),
